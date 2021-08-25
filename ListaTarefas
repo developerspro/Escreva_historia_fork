@@ -1,0 +1,67 @@
+/**
+* Crie a sua História 0.1V
+/
+
+
+1-Primeira Páginas: Quem somos
+    1.1 Quem somos  = Design com os slides:
+        -Imagens transitando a cada segundos;
+
+    1.2 Menu de de Navegação no topo da pagina
+        -Menu com as opções: 
+            -Logar
+            -Cadastrar
+            -Inicio
+
+    1.2 Footer/Rodapé - Direitos autorais 
+        - Div com informações da Página;
+
+2-Segunda Página: Inicio das histórias
+
+    2.1 Inicio - Menu para transição dentro do site
+        -Menu com as opções: 
+            .Logar;
+            .Cadastrar;
+            .Categorias;
+            .Input Pesquisar;
+
+    2.2 Conteudo- Thumb e titulos das histórias
+        -Imagens das histórias;
+        -Titulos das histórias;
+        -Resumo da obra;
+        -Genero;
+        -Botão para visitar a página que contem a história 
+
+    2.3 Footer/Rodapé - Diretos Autorais 
+        - Div com informações da Página;
+
+3-Terceira Página: Cadastrar Usuários
+
+    3.1 Menu para transição no site:
+        -Menu com as opções: 
+            .Logar;
+            .Categorias;
+            .Quem somos;
+            .Inicio;
+
+    3.2 Formulario para cadastro das contas
+        -label com informações do input
+        -input do tipo name
+        -label com informações do password
+        -input tipo password 
+        -Botão tipo submit para cadastro do usuario no banco de dados
+         
+4-Quarta Página: Logar Usuários
+
+    4.1 Menu para transição no site 
+            .Categorias;
+            .Quem somos;
+            .Inicio;
+            .Cadastrar;
+
+    4.2 Formulario para logar das contas
+        -label com informações do input
+        -input do tipo name
+        -label com informações do password
+        -input tipo password 
+
