@@ -1,0 +1,54 @@
+body {
+    background-repeat: no-repeat;
+    background-image:linear-gradient(45deg, #2E0375, #8F51F4, #6107F2, #432673, #4E06C2, #542473, #3A0F75, #4D0675,#430261, #580375,#6D09AD,#7704AD, #AA02F2);
+    font-family: Tahoma;
+}
+#login-container{
+    
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+    
+#geral {
+    width:1200px;
+    margin: auto;
+    background:#ddd;
+}
+#cabecalho {
+    background:#fdd;
+    padding:20px;
+    
+}
+#conteudo-1 {
+    background:#bfb;
+    float:left;
+    width:210px;
+    padding:10px;
+}
+#conteudo-2 {
+    float:right;
+    width:720px;
+}
+#conteudo-2-1 {
+    float:left;
+    width:460px;
+    padding:10px;
+    background:#ddf;
+}
+#conteudo-2-2 {
+    float:right;
+    /*diminuimos a largura para não quebrar o layout
+    * valor antigo 220
+    */
+    width:200px;
+    padding:10px;
+    background:#dff;
+}
+#rodape {
+    clear:both;
+    padding:10px;
+    background:#ff9;
+}
