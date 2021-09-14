@@ -40,7 +40,7 @@
 
       <h1>Cadastro</h1>
 
-        <form action="principal.php" method="post">
+        <form action="./Metodos/confirmacaoLogin.php" method="post">
 
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">
