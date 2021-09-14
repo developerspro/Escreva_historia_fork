@@ -40,12 +40,12 @@
 
       <h1>Cadastro</h1>
 
-        <form action="principal.php" method="post">
+        <form action="./Metodos/cadastroConfir.php" method="post">
 
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">
           <label for="password">Senha</label>
-          <input type="password" name="password" id="password" placeholder="Digite a sua senha ">
+          <input type="password" name="senha" id="password" placeholder="Digite a sua senha ">
           <a href="#" id="forgot-pass">Esqueceu a senha?</a>
           <input type="submit" value="Login">
 

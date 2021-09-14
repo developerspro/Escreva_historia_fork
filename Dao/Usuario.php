@@ -1,12 +1,16 @@
 <?php
-
-    class Usuario extends Sql{
-
+    
+    require_once("Conexao.php");
+    class Usuario extends Conexao{
+        
+        
         // função que realiza o cadastro no banco
-        public function cadastrar($usuario, $nome, $senha)
+        public function cadastrar($dados)
          { 
-            $sql = "insert into usuarios values ('$usuario', '$nome', '$senha')";
-            $resultado = $this->dao->prepare($sql);
+            $sql = "insert into usuario(email, senha) values(:email, :senha)";
+            $resultado = $this->conn->prepare($sql);
+            $resultado->bindParam(':email', $dados['email']);
+            $resultado->bindParam(':senha', $dados['senha']);
             $retorno = $resultado->execute();
             if(isset($retorno)) {
                 return true;
