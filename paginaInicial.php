@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escreva sua história - Crie sua conta!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/styleInicioHistoria.css">
-    <link rel="stylesheet" href="style/bootstrap/css/">
+    <link rel="stylesheet" href="./style/estiloPaginaInicial.css">
+    <link rel="stylesheet" href="./style/bootstrap/css.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     
     
@@ -16,12 +16,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-      <a class="navbar-brand" href="./inicioHistorias.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
+      <a class="navbar-brand" href="paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
       <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -34,19 +32,84 @@
           </li>
       </div>
     </nav>
-<div class = "IdBody">
 
-<div id="geral">
-    <div id="cabecalho">Teste</div>
-    <div id="principal">
-        <div id="conteudo-1">SUPER TESTE</div>
-        <div id="conteudo-2">
-            <div id="conteudo-2-1">HIPER TESTE</div>
-            <div id="conteudo-2-2"> ULTRA TESTE</div>
-        </div>
+    <div class="primeira-divisao">
+        
+            <div class="header">
+              <h1>Chania</h1>
+            </div>
+
+            <div class="colunaEsquerda">
+                SUPER TESTE
+            </div>
+
+            <div class="colunaCentro">
+                HIPER TESTE
+            </div>
+
+            <div class="colunaDireita">
+                 ULTRA TESTE
+            </div>
     </div>
-    <div id="rodape">TESTE RODA</div>
-</div>
 
-</body>
+    
+
+    <div class="rodape">
+        Teste
+
+
+    </div>
+
+
+
+        </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- <main> 
+            <div id="content-section">
+
+                <div id="conteudo-1">
+                  SUPER TESTE
+                </div>
+
+                <div id="conteudo-2">
+
+                    <div id="conteudo-2-1">
+                      HIPER TESTE
+                    </div>
+
+                    <div id="conteudo-2-2">
+                       ULTRA TESTE
+                      </div>
+                </div>
+            </div>
+
+            <div id="rodape">TESTE RODA</div>
+       
+      </main> -->
+
