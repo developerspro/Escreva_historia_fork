@@ -1,6 +1,7 @@
 .cDados {
    margin: 0;
 }
+/* -> Style antigo do background
 .IdBody{
 background-image: url(../imgs/CadastroBack.png) ;
   background-size: cover;
@@ -9,9 +10,43 @@ background-image: url(../imgs/CadastroBack.png) ;
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  
+}*/
+@media (max-width: 920px) {
+    .IdBody{
+      background-image: url(../imgs/cad920.png) ;
+      background-size: contain;
+      background-position: center;
+      height: 700px;
+      width: 100%;
+      max-width: auto;
+      position: absolute;
+      background-repeat: no-repeat;
+}
+}
 
-
+@media (max-width: 1280px){
+    .IdBody{
+        background-image: url(../imgs/cad1280.png) ;
+        background-size: contain;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        max-width: auto;
+        position: absolute;
+        background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1980px){
+    .IdBody{
+        background-image: url(../imgs/cad1980.png);
+        background-size: contain;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        max-width: auto;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
 }
 
 #login-container{

@@ -1,7 +1,7 @@
 .cDados {
    margin: 0;
 }
-.IdBody{
+/*.IdBody{
 background-image: url(../imgs/CadastroLogin.png) ;
   background-size: cover;
   background-position: center;
@@ -12,6 +12,44 @@ background-image: url(../imgs/CadastroLogin.png) ;
   
 
 
+}*/
+
+@media (max-width: 920px) {
+    .IdBody{
+      background-image: url(../imgs/login920.png) ;
+      background-size: contain;
+      background-position: center;
+      height: 700px;
+      width: 100%;
+      max-width: auto;
+      position: absolute;
+      background-repeat: no-repeat;
+}
+}
+
+@media (max-width: 1280px){
+    .IdBody{
+        background-image: url(../imgs/login1280.png) ;
+        background-size: contain;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        max-width: auto;
+        position: absolute;
+        background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1980px){
+    .IdBody{
+        background-image: url(../imgs/login1980.png);
+        background-size: contain;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        max-width: auto;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
 }
 
 #login-container{
