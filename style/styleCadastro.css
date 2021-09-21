@@ -13,6 +13,7 @@ background-image: url(../imgs/CadastroBack.png) ;
 }*/
 @media (max-width: 920px) {
     .IdBody{
+        /* imagens em diferentes escalas, para que responsividade se mantenha ativa */
       background-image: url(../imgs/cad920.png) ;
       background-size: contain;
       background-position: center;
@@ -26,6 +27,7 @@ background-image: url(../imgs/CadastroBack.png) ;
 
 @media (max-width: 1280px){
     .IdBody{
+        /* imagens em diferentes escalas, para que responsividade se mantenha ativa */
         background-image: url(../imgs/cad1280.png) ;
         background-size: contain;
         background-position: center;
@@ -38,6 +40,7 @@ background-image: url(../imgs/CadastroBack.png) ;
 }
 @media (max-width: 1980px){
     .IdBody{
+        /* imagens em diferentes escalas, para que responsividade se mantenha ativa */
         background-image: url(../imgs/cad1980.png);
         background-size: contain;
         background-position: center;
