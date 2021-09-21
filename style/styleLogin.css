@@ -1,7 +1,7 @@
 .cDados {
    margin: 0;
 }
-.IdBody{
+/*.IdBody{
 background-image: url(../imgs/CadastroLogin.png) ;
   background-size: cover;
   background-position: center;
@@ -12,7 +12,46 @@ background-image: url(../imgs/CadastroLogin.png) ;
   
 
 
+}*/
+
+@media (max-width: 920px) { /* celulares */
+    .IdBody{
+      background-image: url(../imgs/login920.png) ;
+      background-size: contain;
+      background-position: center;
+      height: 700px;
+      width: 100%;
+      max-width: auto;
+      position: absolute;
+      background-repeat: no-repeat;
 }
+}
+
+@media (max-width: 1280px){ /* pcs ate 1280 px */
+    .IdBody{
+        background-image: url(../imgs/login1280.png) ;
+        background-size: contain;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        max-width: auto;
+        position: absolute;
+        background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1980px){ /* pcs até 1980 x 1080 px */
+    .IdBody{
+        background-image: url(../imgs/login1980.png);
+        background-size: contain;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        max-width: auto;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+}
+
 
 #login-container{
     
@@ -32,6 +71,7 @@ form{
    
     margin-bottom: 40px;
 }
+
 
 .gallery{
     color: #555;
