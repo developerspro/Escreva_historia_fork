@@ -1,204 +1,204 @@
-.cDados {
-   margin: 0;
+body{
+    background-color: #5e17eb;
 }
-/*.IdBody{
-background-image: url(../imgs/CadastroLogin.png) ;
-  background-size: cover;
-  background-position: center;
-  height: 700px;
-  width: 100%;
-  position: absolute;
-  background-repeat: no-repeat;
-  
-
-
-}*/
-
-@media (max-width: 920px) { /* celulares */
-    .IdBody{
-      background-image: url(../imgs/login920.png) ;
-      background-size: contain;
-      background-position: center;
-      height: 700px;
-      width: 100%;
-      max-width: auto;
-      position: absolute;
-      background-repeat: no-repeat;
-}
-}
-
-@media (max-width: 1280px){ /* pcs ate 1280 px */
-    .IdBody{
-        background-image: url(../imgs/login1280.png) ;
-        background-size: contain;
-        background-position: center;
-        height: 700px;
-        width: 100%;
-        max-width: auto;
-        position: absolute;
-        background-repeat: no-repeat;
-  }
-}
-@media (max-width: 1980px){ /* pcs até 1980 x 1080 px */ 
-    .IdBody{
-        background-image: url(../imgs/login1980.png);
-        background-size: contain;
-        background-position: center;
-        height: 700px;
-        width: 100%;
-        max-width: auto;
-        position: absolute;
-        background-repeat: no-repeat;
-    }
-}
-
-
-#login-container{
-    
-    width: 50%;
-    text-align: center;
-    position: relative;
-    top: 25%;
-    left: 25%;
-    
-    
-
-}
-
-/* Formulario */
-
-form{
+ /*.IdBody{
+ background-image: url(../imgs/CadastroLogin.png) ;
+   background-size: cover;
+   background-position: center;
+   height: 700px;
+   width: 100%;
+   position: absolute;
+   background-repeat: no-repeat;
    
-    margin-bottom: 40px;
-}
-
-
-.gallery{
-    color: #555;
-    padding: 0 100px 50px 100px;
-    overflow:hidden;
-}
-
-
-
-.gallery-card img{
-    width: 320px;
-     height:205px;
-}
-
-
-.gallery-card {
-    width: 32%;
-    float: left;
-    text-align: center;
-}
-
-.gallery-title{
-    text-transform: uppercase;
-    letter-spacing: 6px;/*define um espaço entre as letras*/
-    font-size: 16px;
-    font-weight: bold;/*especifica o peso ou a intensidade da fonte (ex.: negrito)*/
-}
-
-label, input{
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-
-label{
-    font-weight: bold;
-    font-size: .8rem;
-}
-
-input{
-    border-bottom: 2px solid #323232;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-input:focus{
-    border-bottom: 2px solid #08558B;
-}
-#forgot-pass{
-    text-align:right;
-    display:block;
-}
-input[type="submit"], button{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: seashell;
-    background-color: #08558B;
-    cursor: pointer;
-}
-input[type="submit"]:hover{
-    background-color: #1B223C;
-    transition: .5s;
-}
-
-.principal{
-    width: 1024px; /*usado para definir uma largura*/
-    margin:  20px auto;
-}/* usado para definir uma margin*/
-
-/* Redes sociais */
-
-#social-container, #social-container p{
-    margin-bottom: 20px;
-}
-
-/*Registar*/
-
-#register-container p{
-    margin-bottom: 10px ;
-}
-
-.teste{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-shadow: 8px;
-    text-align: center;
-    top: 25px;
-    color: #050505;
-    margin-top: 150px;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 30px; 
-      
-}
-
-.teste  label{
-    padding: 10px;
-    border: -10px;
+ 
+ 
+ }*/
+ 
+ @media (max-width: 920px) { /* celulares */
+     .IdBody{
+       background-image: url(../imgs/login920.png) ;
+       background-size: contain;
+       background-position: center;
+       height: 700px;
+       width: 100%;
+       max-width: auto;
+       position: absolute;
+       background-repeat: no-repeat;
+ }
+ }
+ 
+ @media (max-width: 1280px){ /* pcs ate 1280 px */
+     .IdBody{
+         background-image: url(../imgs/login1280.png) ;
+         background-size: contain;
+         background-position: center;
+         height: 700px;
+         width: 100%;
+         max-width: auto;
+         position: absolute;
+         background-repeat: no-repeat;
+   }
+ }
+ @media (max-width: 1980px){ /* pcs até 1980 x 1080 px */ 
+     .IdBody{
+         background-image: url(../imgs/login1980.png);
+         background-size: contain;
+         background-position: center;
+         height: 700px;
+         width: 100%;
+         max-width: auto;
+         position: absolute;
+         background-repeat: no-repeat;
+     }
+ }
+ 
+ 
+ #login-container{
+     
+     width: 50%;
+     text-align: center;
+     position: relative;
+     top: 25%;
+     left: 25%;
+     
+     
+ 
+ }
+ 
+ /* Formulario */
+ 
+ form{
     
-}
-
-
-/* configurações das funções, aviso, sucesso e erros */
-div.sucesso {
-    padding: 7px 15px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    background-color: rgba(146, 207, 146, 0.349);
-    color: green;
-}
-
-div.aviso {
-    padding: 7px 15px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    background-color: rgb(251, 248, 229);
-    color: rgb(134, 110, 66);
-}
-
-div.erro {
-    padding: 7px 15px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    background-color: rgb(239, 223, 222);
-    color: rgb(157, 75, 69);
-}
+     margin-bottom: 40px;
+ }
+ 
+ 
+ .gallery{
+     color: #555;
+     padding: 0 100px 50px 100px;
+     overflow:hidden;
+ }
+ 
+ 
+ 
+ .gallery-card img{
+     width: 320px;
+      height:205px;
+ }
+ 
+ 
+ .gallery-card {
+     width: 32%;
+     float: left;
+     text-align: center;
+ }
+ 
+ .gallery-title{
+     text-transform: uppercase;
+     letter-spacing: 6px;/*define um espaço entre as letras*/
+     font-size: 16px;
+     font-weight: bold;/*especifica o peso ou a intensidade da fonte (ex.: negrito)*/
+ }
+ 
+ label, input{
+     display: block;
+     width: 100%;
+     text-align: left;
+ }
+ 
+ label{
+     font-weight: bold;
+     font-size: .8rem;
+ }
+ 
+ input{
+     border-bottom: 2px solid #323232;
+     padding: 10px;
+     font-size: 1rem;
+     margin-bottom: 20px;
+ }
+ input:focus{
+     border-bottom: 2px solid #08558B;
+ }
+ #forgot-pass{
+     text-align:right;
+     display:block;
+ }
+ input[type="submit"], button{
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: bold;
+     border: none;
+     height: 40px;
+     border-radius: 20px;
+     margin-top: 30px;
+     color: seashell;
+     background-color: #08558B;
+     cursor: pointer;
+ }
+ input[type="submit"]:hover{
+     background-color: #1B223C;
+     transition: .5s;
+ }
+ 
+ .principal{
+     width: 1024px; /*usado para definir uma largura*/
+     margin:  20px auto;
+ }/* usado para definir uma margin*/
+ 
+ /* Redes sociais */
+ 
+ #social-container, #social-container p{
+     margin-bottom: 20px;
+ }
+ 
+ /*Registar*/
+ 
+ #register-container p{
+     margin-bottom: 10px ;
+ }
+ 
+ .teste{
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     box-shadow: 8px;
+     text-align: center;
+     top: 25px;
+     color: #050505;
+     margin-top: 150px;
+     padding: 10px;
+     font-size: 20px;
+     border-radius: 30px; 
+       
+ }
+ 
+ .teste  label{
+     padding: 10px;
+     border: -10px;
+     
+ }
+ 
+ 
+ /* configurações das funções, aviso, sucesso e erros */
+ div.sucesso {
+     padding: 7px 15px;
+     margin-bottom: 15px;
+     border-radius: 15px;
+     background-color: rgba(146, 207, 146, 0.349);
+     color: green;
+ }
+ 
+ div.aviso {
+     padding: 7px 15px;
+     margin-bottom: 15px;
+     border-radius: 15px;
+     background-color: rgb(251, 248, 229);
+     color: rgb(134, 110, 66);
+ }
+ 
+ div.erro {
+     padding: 7px 15px;
+     margin-bottom: 15px;
+     border-radius: 15px;
+     background-color: rgb(239, 223, 222);
+     color: rgb(157, 75, 69);
+ }

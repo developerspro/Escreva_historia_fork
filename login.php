@@ -12,6 +12,7 @@
     
 </head>
   <body>
+  <div class = "IdBody">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -33,7 +34,7 @@
           </li>
       </div>
     </nav>
-<div class = "IdBody">
+
 
 
     <div id="login-container">
