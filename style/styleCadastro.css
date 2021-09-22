@@ -24,6 +24,7 @@ body{
        max-width: auto;
        position: absolute;
        background-repeat: no-repeat;
+       padding: 200px 200px 200px 200px;
  }
  }
  
@@ -37,6 +38,7 @@ body{
          max-width: auto;
          position: absolute;
          background-repeat: no-repeat;
+         padding: 200px 200px 200px 200px;
    }
  }
  @media (max-width: 1980px){ /* pcs até 1980 x 1080 px */ 
@@ -49,6 +51,7 @@ body{
          max-width: auto;
          position: absolute;
          background-repeat: no-repeat;
+         padding: 200px 200px 200px 200px;
      }
  }
  
