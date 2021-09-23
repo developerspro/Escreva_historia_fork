@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-      <a class="navbar-brand" href="./inicioHistorias.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
+      <a class="navbar-brand" href="./paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
 
@@ -43,7 +43,7 @@
 
       <h1>Cadastro</h1>
 
-        <form action="./Metodos/cadastroConfir.php" method="post">
+        <form action="./Metodos/confirmacaoCadastro.php" method="post">
 
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">

@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./escreva_SuaHistoria/cadastro.php">Criar Conta<span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+                    <a class="nav-link" href="./cadastro.php">Criar Conta<span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./login.php">Logue já!</a> <!-- redirecionando a pagina de login -->

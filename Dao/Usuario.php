@@ -20,17 +20,15 @@
         }
 
      
-        public function login($usuario, $senha)
+        public function login($dados)
         { 
-            $this->sql = "select * from usuarios where tUsuario=:usuario and tSenha=:senha"; 
-            $resultado = $this->dao->prepare($this->sql); 
-            $resultado->bindParam(':usuario', $usuario);
-            $resultado->bindParam(':senha', $senha);
+            $this->sql = "select * from usuario where email=:usuario and senha=:senha"; 
+            $resultado = $this->conn->prepare($this->sql); 
+            $resultado->bindParam(':usuario',$dados['email']);
+            $resultado->bindParam(':senha',$dados['senha']);
             $resultado->execute();
             $dados = $resultado->fetch(PDO::FETCH_ASSOC);
             if ($dados) {
-                echo("teste");
-                header(""); /* redirecionar a pagina inicio, com as histórias, caso logado com sucesso.*/
                 return true;
             } else {
                 return false;

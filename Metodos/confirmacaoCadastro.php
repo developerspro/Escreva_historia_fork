@@ -4,16 +4,16 @@
  
  $db = new Usuario();
 
- $dados['email'] = $_POST['email'];
- $dados['senha'] = $_POST['senha'];
+ $credenciais['email'] = $_POST['email'];
+ $credenciais['senha'] = $_POST['senha'];
 
  
- if($db->cadastrar($dados)){
+ if($db->cadastrar($credenciais)){
     echo "Inserção ok";
  }
  else{
 
     echo"Inserção Fail";
-};
+}
 
 ?>

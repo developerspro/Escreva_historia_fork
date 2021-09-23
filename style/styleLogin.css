@@ -43,7 +43,7 @@ body{
  }
  @media (max-width: 1980px){ /* pcs até 1980 x 1080 px */ 
      .IdBody{
-         background-image: url(../imgs/login1980.png);
+         background-image: url(../imgs/login1280.png);
          background-size: contain;
          background-position: center;
          height: 700px;
