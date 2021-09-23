@@ -3,11 +3,11 @@
 /
 
 
-1-Primeira Páginas: Quem somos
+1-Primeira Páginas: Quem somos --OK
     1.1 Quem somos  = Design com os slides:
-        -Imagens transitando a cada segundos; -----------OK
+        -Imagens transitando a cada segundos;
 
-    1.2 Menu de de Navegação no topo da pagina ----------OK
+    1.2 Menu de de Navegação no topo da pagina 
         -Menu com as opções: 
             -Logar
             -Cadastrar
@@ -35,7 +35,7 @@
     2.3 Footer/Rodapé - Diretos Autorais 
         - Div com informações da Página;
 
-3-Terceira Página: Cadastrar Usuários
+3-Terceira Página: Cadastrar Usuários ----OK
 
     3.1 Menu para transição no site:
         -Menu com as opções: 
@@ -51,7 +51,7 @@
         -input tipo password 
         -Botão tipo submit para cadastro do usuario no banco de dados
          
-4-Quarta Página: Logar Usuários
+4-Quarta Página: Logar Usuários ----OK
 
     4.1 Menu para transição no site 
             .Categorias;
@@ -65,3 +65,8 @@
         -label com informações do password
         -input tipo password 
 
+5-Criar Perfil do Usuario:
+
+6-Pasta do usuario após cadastro
+
+7-Organizar o banco de dados 
