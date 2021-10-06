@@ -1,6 +1,8 @@
 <?php
 
+//efetua o cadastro do usuario no banco de dados
  require_once("../Dao/Usuario.php");
+ 
  
  $db = new Usuario();
 
@@ -9,11 +11,12 @@
 
  
  if($db->cadastrar($credenciais)){
-    echo "Inserção ok";
+    header('Location: ../paginaInicial.php');
+    
  }
  else{
 
-    echo"Inserção Fail";
+   header("Location: index.php");
 }
 
 ?>

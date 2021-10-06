@@ -16,7 +16,7 @@ body{
  
  @media (max-width: 920px) { /* celulares */
      .IdBody{
-       background-image: url(../imgs/login920.png) ;
+       background-image: url(../imgs/Cadastro.png) ;
        background-size: contain;
        background-position: center;
        height: 700px;
@@ -30,7 +30,7 @@ body{
  
  @media (max-width: 1280px){ /* pcs ate 1280 px */
      .IdBody{
-         background-image: url(../imgs/login1280.png) ;
+         background-image: url(../imgs/Cadastro.png) ;
          background-size: contain;
          background-position: center;
          height: 700px;
@@ -43,7 +43,7 @@ body{
  }
  @media (max-width: 1980px){ /* pcs até 1980 x 1080 px */ 
      .IdBody{
-         background-image: url(../imgs/login1980.png);
+         background-image: url(../imgs/Cadastro.png);
          background-size: contain;
          background-position: center;
          height: 700px;

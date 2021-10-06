@@ -50,7 +50,7 @@
           <label for="password">Senha</label>
           <input type="password" name="senha" id="password" placeholder="Digite a sua senha ">
           <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-          <input type="submit" value="Login">
+          <input type="submit" value="Cadastrar">
 
         </form>
 

@@ -40,6 +40,6 @@
   </section>
 </div>
 
-<footer>Escreva sua história &copy; 2021</footer>
+
 </body>
 </html>

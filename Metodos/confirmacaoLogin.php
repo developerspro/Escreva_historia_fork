@@ -1,19 +1,21 @@
 <?php
 
- require_once("../Dao/Usuario.php");
+// Verifica se o usuario possui Login no banco de dados
+
+require_once "../Dao/Usuario.php";
+
+$db = new Usuario();
+
+$credenciais['email'] = $_POST['email'];
+$credenciais['senha'] = $_POST['senha'];
+
+var_dump($credenciais);
  
- $db = new Usuario();
-
- $credenciais['email'] = $_POST['email'];
- $credenciais['senha'] = $_POST['senha'];
-
- 
- if($db->login($credenciais)){
-    echo "Inserção ok";
- }
- else{
-
-    echo"Inserção Fail";
+if ($db->login($credenciais) == true) {
+   header('Location: ../paginaInicial.php');
+   
+}else {
+   echo 'login error';
 }
-
+  
 ?>
