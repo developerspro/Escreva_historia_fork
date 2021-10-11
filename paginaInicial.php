@@ -1,8 +1,19 @@
 <?php
 
-  require_once "./Dao/Usuario.php";
-  $db = new Usuario;
-  $dados = $db->publicacoesUsuarios();
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+
+ 
 ?>
 
 <!DOCTYPE html>
@@ -56,24 +67,46 @@
                     <div class="container">
                         <div class="row align-items-start">
 
-                            <?php foreach ($dados as $linha => $campo):?>
+                               <?php 
+                                 require_once './Dao/paginacao.php';
+                                 $pg = new Paginacao;
+                               
+                                 $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
+                               
+                                 $dados = $pg->paginar($pag);
+                               
+                                 foreach ($dados as $linha => $campo):
+                                   
+                              ?>
                                 <div class="col" >
                                   <div class="postagem">
-                                  
                                             <img src="<?php echo $campo['capa']; ?>" alt="modelo 1">
+
+                                            <p class="gallery-title"><?php echo $campo['titulo']; ?> </p>
 
                                             <p class="gallery-title"><?php echo $campo['artigo']; ?> </p>
 
                                             <p class="gallery-text">COD: <?php echo $campo['data']; ?></p>
 
-                                            <input type="hidden" name="codigo_lanche" value="<?php echo $campo['Id']; ?>">
-
-                                                                
+                                            <input type="hidden" name="codigo_lanche" value="<?php echo $campo['Id']; ?>">                    
                                   </div>
                                 </div>
                                 <?php endforeach; ?>
                         </div>
                     </div>
+                    <nav aria-label="Navegação de página exemplo">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Próximo</a>
+                        </li>
+                      </ul>
+                    </nav>
               </section>
             </div>
 
@@ -81,9 +114,6 @@
                  ULTRA TESTE
             </div>
     </div>
-
-    
-
     <div class="rodape">
         Teste
 
