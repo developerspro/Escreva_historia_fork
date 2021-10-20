@@ -1,20 +1,13 @@
-<?php
+<?php 
 
-  
-  
+  require_once './Dao/paginacao.php';
+  $pg = new Paginacao;
 
-  
+  $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
 
-  
-
-  
-
-
-  
-  
-
- 
+  $dados = $pg->paginar($pag);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -23,153 +16,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escreva sua história - Crie sua conta!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./style/estiloPaginaInicial.css">
     <link rel="stylesheet" href="./style/bootstrap/css.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    
-    
 </head>
-  <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <a class="navbar-brand" href="paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
 
-      <a class="navbar-brand" href="paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./cadastro.php">Cadastrar</a> <!-- redirecionando a pagina de login -->
+      </li>
+  </div>
+</nav>
 
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./cadastro.php">Cadastrar</a> <!-- redirecionando a pagina de login -->
-          </li>
+
+<div class="grid-container">
+  <div class="header">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+<!-- Indicators/dots -->
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+</div>
+
+<!-- The slideshow/carousel -->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="./imgs/TesteCarousel.png" alt="Los Angeles" class="" style="width:100%">
+  </div>
+  <div class="carousel-item">
+    <img src="./imgs/TesteCarousel2.png" alt="Chicago" class="" style="width:100%">
+  </div>
+  <div class="carousel-item">
+    <img src="./imgs/TesteCarousel3.png" alt="New York" class="" style="width:100%">
+  </div>
+</div>
+
+<!-- Left and right controls/icons -->
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+  </div>
+  
+  <div class="left" style="background-color:#aaa;">Column</div>
+
+  <div class="middle" style="background-color:#bbb;">
+
+  <?php foreach ($dados as $linha => $campo): ?>
+
+    
+      <div class="mx-auto " style="width: 700px">
+        <div class="card mb-3 ">
+          <img src="<?php echo $campo['capa']; ?>" class="card-img-top " alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $campo['titulo']; ?></h5>
+              <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted"><?php echo $campo['data']; ?></small></p>
+            </div>
+        </div>
       </div>
-    </nav>
-
-    <div class="primeira-divisao">
-        
-            <div class="header">
-              <h1>Chania</h1>
-            </div>
-
-            <div class="colunaEsquerda">
-                SUPER TESTE
-            </div>
-
-            <div class="colunaCentro">
-              <section class="gallery">
-
-                    <div class="container">
-                        <div class="row align-items-start">
-
-                               <?php 
-                                 require_once './Dao/paginacao.php';
-                                 $pg = new Paginacao;
-                               
-                                 $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
-                               
-                                 $dados = $pg->paginar($pag);
-                               
-                                 foreach ($dados as $linha => $campo):
-                                   
-                              ?>
-                                <div class="col" >
-                                  <div class="postagem">
-                                            <img src="<?php echo $campo['capa']; ?>" alt="modelo 1">
-
-                                            <p class="gallery-title"><?php echo $campo['titulo']; ?> </p>
-
-                                            <p class="gallery-title"><?php echo $campo['artigo']; ?> </p>
-
-                                            <p class="gallery-text">COD: <?php echo $campo['data']; ?></p>
-
-                                            <input type="hidden" name="codigo_lanche" value="<?php echo $campo['Id']; ?>">                    
-                                  </div>
-                                </div>
-                                <?php endforeach; ?>
-                        </div>
-                    </div>
-                    <nav aria-label="Navegação de página exemplo">
-                      <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                          <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+    
+    <?php endforeach; ?>
+    <nav aria-label="Navegação de página exemplo">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Anterior</a>
+        </li>
+          <?php 
+            for($i = 0; $i <= $_POST['totalPaginas']; $i++){
+          ?>
+        <li class="page-item"><a class="page-link" href="paginaInicial.php?pagina=<?=$i?>"><?=$i?></a></li>
+            <?php
+              }
+            ?>
                         <li class="page-item">
                           <a class="page-link" href="#">Próximo</a>
                         </li>
                       </ul>
                     </nav>
-              </section>
-            </div>
 
-            <div class="colunaDireita">
-                 ULTRA TESTE
-            </div>
-    </div>
-    <div class="rodape">
-        Teste
+    
+  
+  </div>  
+  
+  <div class="right" style="background-color:#ccc;">Column</div>
+  
+  <div class="footer">
+  <p>Footer</p>
+  </div>
+</div>
 
-
-    </div>
-
-
-
-        </body>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <!-- <main> 
-            <div id="content-section">
-
-                <div id="conteudo-1">
-                  SUPER TESTE
-                </div>
-
-                <div id="conteudo-2">
-
-                    <div id="conteudo-2-1">
-                      HIPER TESTE
-                    </div>
-
-                    <div id="conteudo-2-2">
-                       ULTRA TESTE
-                      </div>
-                </div>
-            </div>
-
-            <div id="rodape">TESTE RODA</div>
-       
-      </main> -->
-

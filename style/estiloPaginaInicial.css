@@ -1,121 +1,71 @@
-
-body{
-    background-repeat: no-repeat;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    height:250px
+  }
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left  middle middle middle middle right' 
+      'footer footer footer footer footer footer';
+    grid-column-gap: 5px;
+    
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 5px;
+    height: 3600px; /* Should be removed. Only for demonstration */
     background-image:linear-gradient(45deg, #2E0375, #8F51F4, #6107F2, #432673, #4E06C2, #542473, #3A0F75, #4D0675,#430261, #580375,#6D09AD,#7704AD, #AA02F2);
-    font-family: Tahoma;
-    
-}
-
-.header {
-    border: 1px solid rgb(27, 161, 79);
-    padding: 15px;
-    margin: 1%;
-    background-color: palegreen;
   }
-
-.colunaEsquerda{
-    width: 20%;
-    float: left;
-    padding: 15px 15px 500px 15px;;
-    border: 1px solid red;
-    margin: 1%;
-    background-color:rgb(253, 194, 2);
-    
-    
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
   }
-
-.colunaCentro{
-
-    width: 56%;
-    float: left;
-    padding: 15px 15px 500px 15px;
-    border: 1px solid red ;
-    margin-top: 1%;
-    background-color:rgb(199, 253, 2);
-    
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
   }
-
-.colunaDireita{
-
-    width: 20%;
-    float: right;
-    padding: 15px 15px 500px 15px;;
-    border: 1px solid red;
-    margin: 1%;
-    background-color:rgb(81, 253, 2);
-}
-
-.rodape {
-    clear:both;
-    padding:10px;
-    background:#ff9;
-}
-
-.postagem{
-    padding: 20px;
-}
-
-/*.primeira-divisao{
-    width:75%;
-    margin:0 auto;
-    background:#ddd;
-    margin-top: 1%;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-/*#conteudo-1 {
-    background:#bfb;
-    float:left;
-    width:224px;
-    padding:10px;
-}
-#conteudo-2 {
-    float:right;
-    
-}
-#conteudo-2-1 {
-    float:left;
-    width:720px;
-    padding:10px;
-    background:#ddf;
-}
-#conteudo-2-2 {
-    float:right;
-    width:270px;
-    padding:10px;
-    background:#dff;
-}
-
-main{
-    width: 80%;
-    margin: auto;
-}
-
-.content-section{
-    background-color: rgb(5, 5, 5);
-    padding: 15px;
-    margin-top: 15px;
-}
-
-#rodape {
-    clear:both;
-    padding:10px;
-    background:#ff9;
-}*/
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #b85cf5;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }

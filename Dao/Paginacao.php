@@ -13,9 +13,13 @@
 
 
             $limitadorPostagens = '4';
+            
 
             $totalRegistros = count($todos);
+            
+
             $totalPaginas = ceil($totalRegistros/$limitadorPostagens);
+            $_POST['totalPaginas'] = $totalPaginas;
 
             $inicio = ($limitadorPostagens*$pag)-$limitadorPostagens;
 
