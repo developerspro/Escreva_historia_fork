@@ -15,8 +15,10 @@
             $resultado->bindParam(':senha', $dados['senha']);
             $retorno = $resultado->execute();
             if(isset($retorno)) {
+                session_start();
                 $_SESSION['email']=$dados['email'];
                 $_SESSION['senha']=$dados['senha'];
+                $_SESSION['nomeUsuario']=$dados['nome'];
                 return true;
                 
             }else {

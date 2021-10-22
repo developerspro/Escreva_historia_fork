@@ -42,7 +42,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="./login.php">Login</a> <!-- redirecionando a pagina de login -->
+        <a class="nav-link" href="./login.php"></a> <!-- redirecionando a pagina de login -->
       </li>
   </div>
 </nav>

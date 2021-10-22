@@ -12,7 +12,8 @@ $credenciais['senha'] = $_POST['senha'];
 var_dump($credenciais);
  
 if ($db->login($credenciais) == true) {
-   header('Location: ../paginaInicial.php');
+
+   header('Location: ../paginaInicialLogin.php');
    
 }else {
    echo 'login error';
