@@ -1,5 +1,4 @@
 <?php
-
     require_once("Conexao.php");
 
     class Paginacao extends Conexao{
@@ -11,13 +10,10 @@
             $resultado->execute();
             $todos = $resultado->fetchAll();
 
-
             $limitadorPostagens = '4';
             
-
             $totalRegistros = count($todos);
             
-
             $totalPaginas = ceil($totalRegistros/$limitadorPostagens);
             $_POST['totalPaginas'] = $totalPaginas;
 
@@ -30,31 +26,6 @@
             $dados = $final->fetchAll(PDO::FETCH_ASSOC);
 
             return $dados;
-
-                
-            
-
-            
-        
-
-            
-  {
-     
-  }
-
-            
-
-
-
-
-
-
-            
         }
-
-
     }
-
-
-
 ?>
