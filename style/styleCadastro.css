@@ -1,5 +1,8 @@
 body{
-    background-color: #5e17eb;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(45deg, #2E0375, #8F51F4, #6107F2, #432673, #4E06C2, #542473, #3A0F75, #4D0675,#430261, #580375,#6D09AD,#7704AD, #AA02F2);
+    font-family: Tahoma;
+
 }
  /*.IdBody{
  background-image: url(../imgs/CadastroLogin.png) ;
@@ -17,26 +20,22 @@ body{
  @media (max-width: 920px) { /* celulares */
      .IdBody{
        background-image: url(../imgs/Cadastro.png) ;
-       background-size: contain;
-       background-position: center;
-       height: 700px;
-       width: 100%;
-       max-width: auto;
-       position: absolute;
-       background-repeat: no-repeat;
-       padding: 200px 200px 200px 200px;
+       background-size: 100%;
+        height: 747px;
+        width: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        padding: 200px 200px 200px 200px;
  }
  }
  
  @media (max-width: 1280px){ /* pcs ate 1280 px */
      .IdBody{
          background-image: url(../imgs/Cadastro.png) ;
-         background-size: contain;
-         background-position: center;
-         height: 700px;
+         background-size: 100%;
+         height: 747px;
          width: 100%;
-         max-width: auto;
-         position: absolute;
+         position: relative;
          background-repeat: no-repeat;
          padding: 200px 200px 200px 200px;
    }
@@ -44,12 +43,10 @@ body{
  @media (max-width: 1980px){ /* pcs até 1980 x 1080 px */ 
      .IdBody{
          background-image: url(../imgs/Cadastro.png);
-         background-size: contain;
-         background-position: center;
-         height: 700px;
+         background-size: 100%;
+         height: 747px;
          width: 100%;
-         max-width: auto;
-         position: absolute;
+         position: relative;
          background-repeat: no-repeat;
          padding: 200px 200px 200px 200px;
      }

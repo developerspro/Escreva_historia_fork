@@ -3,7 +3,10 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(45deg, #2E0375, #8F51F4, #6107F2, #432673, #4E06C2, #542473, #3A0F75, #4D0675,#430261, #580375,#6D09AD,#7704AD, #AA02F2);
+    font-family: Tahoma;
+
     
   }
   
@@ -14,7 +17,7 @@
     text-align: center;
     font-size: 35px;
     margin-bottom: 5px;
-    height:250px
+    
   }
   
   /* The grid container */
