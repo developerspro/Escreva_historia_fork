@@ -27,26 +27,49 @@
   <body>
 
   <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    
-    <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
-
-    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-      <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
-        </li>
+  <?php if(isset($_SESSION['id'])) { ?>
         
-        <li class="nav-item">
-          <a class="nav-link" href="./cadastro.php">Cadastrar</a> 
-        </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          
+          <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="./login.php">Logar</a> 
-        </li>
-    </div>
-  </nav>
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./cadastro.php">Cadastrar</a> 
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./Testes.php">Bem vindo - <?php echo $_SESSION['nome'];?></a> 
+              </li>
+          </div>
+        </nav>
+  <?php }else{ ?>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+              
+              <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
+
+              <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
+                  </li>
+                  
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="./login.php">Logar</a> 
+                  </li>
+              </div>
+            </nav>
+    <?php } ?>
+  
               
     
     <div class="grid-container">
@@ -88,7 +111,7 @@
           
             <div class="mx-auto " style="width: 700px">
               <div class="card mb-3 ">
-                <img src="<?php echo $campo['capa']; ?>" class="card-img-top " alt="...">
+                <img src="<?php echo $campo['capa']; ?>" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><?php echo $campo['titulo']; ?></h5>
                     <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -120,7 +143,7 @@
         
         </div>  
       
-      <div class="right" style="background-color:#ccc;">Column</div>
+      
     </div>
       
       <div class="footer">

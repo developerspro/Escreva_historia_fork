@@ -3,9 +3,8 @@
   }
   
   body {
-    background-repeat: no-repeat;
-    background-image:linear-gradient(45deg, #2E0375, #8F51F4, #6107F2, #432673, #4E06C2, #542473, #3A0F75, #4D0675,#430261, #580375,#6D09AD,#7704AD, #AA02F2);
-    font-family: Tahoma;
+    background-color: #4ea0ff;
+    
 
     
   }
@@ -25,7 +24,7 @@
     display: grid;
     grid-template-areas: 
       'header header header header header header' 
-      'left  middle middle middle middle right' 
+      'left left left middle middle middle' 
       'footer footer footer footer footer footer';
     grid-column-gap: 5px;
     
