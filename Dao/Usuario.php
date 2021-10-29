@@ -15,8 +15,10 @@
             $resultado->bindParam(':senha', $dados['senha']);
             $retorno = $resultado->execute();
             if(isset($retorno)) {
+                session_start();
                 $_SESSION['email']=$dados['email'];
                 $_SESSION['senha']=$dados['senha'];
+                $_SESSION['nome']=$dados['nome'];
                 return true;
                 
             }else {
@@ -36,30 +38,14 @@
             $resultado->execute();
             $dados = $resultado->fetch(PDO::FETCH_ASSOC);
             if ($dados) {
-                 return true;
+                 return $dados;
             } else {
-    
                 return false;
             }
         } 
+       
 
-        public function publicacoesUsuarios()
-        {
+    }
 
-            session_start();
-            $sql = "select * from publicacoes";
-            $resultado = $this->conn->prepare($sql);
-            $resultado->execute();
-            $dados = $resultado->fetchAll(PDO::FETCH_ASSOC);
-            if($dados){
-                return $dados;
-            }else{
-                return false;
-            }
-           
-        }
-
-
-}
 
 ?>

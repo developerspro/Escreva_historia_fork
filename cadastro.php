@@ -14,11 +14,11 @@
 
   <body>
 
-  
+  <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-      <a class="navbar-brand" href="./paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
+      <a class="navbar-brand ps-4" href="./paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
 
@@ -80,7 +80,7 @@
     
     
   
- 
+  </div>
             
   </body>
 </html>
