@@ -14,7 +14,7 @@
   <body>
   <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
       <a class="navbar-brand ps-4" href="./paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
 

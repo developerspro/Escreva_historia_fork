@@ -36,7 +36,7 @@
         </nav>
   <?php }else{ ?>
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
               
               <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
 
@@ -48,12 +48,11 @@
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="./cadastro.php">Cadastrar</a> 
+                    <a class="nav-link" href="./cadastro.php">Escreva sua História!</a> 
                   </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="./login.php">Logar</a> 
-                  </li>
+              </div>
+              <div class="actions me-4">
+                    <a class="nav-link" href="./perfil.php">Sair</a> 
               </div>
             </nav>
     <?php } ?>
