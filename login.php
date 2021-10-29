@@ -41,7 +41,8 @@
 
       <h1>Login</h1>
 
-      <!-- <form action="./Metodos/confirmacaoLogin.php" method="post">
+       <!-- form antigo que sempre esteve presente, continua 100% funcional-->
+       <form action="./Metodos/confirmacaoLogin.php" method="post">
 
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">
@@ -49,8 +50,9 @@
         <input type="password" name="senha" id="password" placeholder="Digite a sua senha ">
         <a href="#" id="forgot-pass">Esqueceu a senha?</a>
         <input type="submit" value="Login">
-       FORM ANTIGO 28/10/2021 -->
+       
 
+       <!-- form atualizado não acompanha a pagina completamente também igual cadastro. 
        <form action="./Metodos/confirmacaoLogin.php" method="post">
        <label for="email">E-mail</label>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required="required" size="9" minlength="8" maxlength="30"autocomplate="off">
@@ -60,6 +62,7 @@
         <input type="text" name="usuario" id="usuario" required="required" size="9" minlength="8" maxlength="30" placeholder="Digite seu nome de usuario">
         <a href="#" id="forgot-pass">Esqueceu a senha?</a>
         <input type="submit" value="Login">
+        -->
       </form>
 
        <div id = "registe-container">

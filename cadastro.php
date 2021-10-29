@@ -45,15 +45,16 @@
 
         <form action="./Metodos/confirmacaoCadastro.php" method="post">
 
-         <!-- <label for="email">E-mail</label>
+        <!-- form atual -->
+         <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">
           <label for="password">Senha</label>
           <input type="password" name="senha" id="password" placeholder="Digite a sua senha ">
           <a href="#" id="forgot-pass">Esqueceu a senha?</a>
           <input type="submit" value="Cadastrar">
-        Form anterior 27/10/2021-->
+          
 
-        <!-- criei novos inputs, para acompanhar nosso banco-->
+        <!-- criei novos inputs, para acompanhar nosso banco mas não acompanha o background
         <label for="name">Nome Completo</label>
           <input type="text" name="nome" id="name" placeholder="Digite seu nome completo" autocomplate="off" required="required" size="9" minlength="6" maxlength="30">
           <label for="email">E-mail</label>
@@ -64,9 +65,8 @@
           <input type="password" name="senha" id="password" placeholder="Digite a sua senha "required="required" size="9" minlength="8" maxlength="20">
           <a href="#" id="forgot-pass">Esqueceu a senha?</a>
           <input type="submit" value="Cadastrar">
-
-        
-        </form>
+        -->
+      </form>
 
        <div id = "registe-container">
 
