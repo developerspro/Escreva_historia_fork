@@ -44,11 +44,15 @@
       <h1>Cadastro</h1>
 
         <form action="./Metodos/confirmacaoCadastro.php" method="post">
-
+          
+          <label for="name">Nome Completo</label>   
+          <input type="text" name="nome" id="name" placeholder="Digite seu nome completo" autocomplate="off" required="required" size="9" minlength="6" maxlength="30">
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off" required="required" size="9" minlength="10" maxlength="30">
+          <label for="usuario">Nome de usuario</label>
+          <input type="text" name="nomeusuario" id="usuario" placeholder="Insira seu nome de usuario" required="required" autocomplate="off" size="9" minlength="8" maxlength="30">
           <label for="password">Senha</label>
-          <input type="password" name="senha" id="password" placeholder="Digite a sua senha ">
+          <input type="password" name="senha" id="password" placeholder="Digite a sua senha "required="required" size="9" minlength="8" maxlength="20">
           <a href="#" id="forgot-pass">Esqueceu a senha?</a>
           <input type="submit" value="Cadastrar">
 
@@ -70,3 +74,14 @@
             
   </body>
 </html>
+
+          <label for="name">Nome Completo</label>   
+          <input type="text" name="nome" id="name" placeholder="Digite seu nome completo" autocomplate="off" required="required" size="9" minlength="6" maxlength="30">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off" required="required" size="9" minlength="10" maxlength="30">
+          <label for="usuario">Nome de usuario</label>
+          <input type="text" name="nomeusuario" id="usuario" placeholder="Insira seu nome de usuario" required="required" autocomplate="off" size="9" minlength="8" maxlength="30">
+          <label for="password">Senha</label>
+          <input type="password" name="senha" id="password" placeholder="Digite a sua senha "required="required" size="9" minlength="8" maxlength="20">
+          <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+          <input type="submit" value="Cadastrar">

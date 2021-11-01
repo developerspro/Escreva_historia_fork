@@ -32,7 +32,7 @@ body{
  @media (max-width: 1280px){ /* pcs ate 1280 px */
      .IdBody{
          background-image: url(../imgs/Cadastro.png) ;
-         background-size: 100%;
+         background-size: 00%;
          height: 747px;
          width: 100%;
          position: relative;
