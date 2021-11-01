@@ -6,6 +6,8 @@ body {
 }
 
 
+
+
 .galeria {
     
     width: 1200px;
@@ -71,7 +73,9 @@ body {
 .footer {
     grid-area: footer;
     background-color: #b85cf5;
+    color: rgb(8, 116, 8);
     text-align: center;
+    
   }
 
   .icon {

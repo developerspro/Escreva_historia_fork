@@ -123,6 +123,7 @@ body{
  #forgot-pass{
      text-align:right;
      display:block;
+     color: rgb(199, 20, 20);
  }
  input[type="submit"], button{
      text-align: center;
@@ -153,9 +154,11 @@ body{
  }
  
  /*Registar*/
+
  
  #register-container p{
      margin-bottom: 10px ;
+     color: limegreen;
  }
  
  .teste{

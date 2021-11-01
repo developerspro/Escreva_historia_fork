@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <?php
+        require_once "./Dao/Usuario.php";
+        session_start();
+    ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +15,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 <body>
+<?php
+  $usuario = new usuario();
+  if (isset($_POST['email']) && isset($_POST['senha'])) {
+    $credenciais['email'] = $_POST['email'];
+    $credenciais['senha'] = $_POST['senha'];
+     $dados = $usuario->perfil($credenciais);
+      $_SESSION['seguidor'] = $dados['qntdseguidor'];
 
+  }
+?>
+
+
+<?php
+    var_dump($_SESSION);
+    var_dump($credenciais);
+    var_dump($dados);
+
+?>
 <div class="container-fluid">
   <?php if(isset($_SESSION['id'])) { ?>
         
@@ -74,11 +96,7 @@
         </li>
         <li>
           <span>Seguidores</span>
-          <strong>32</strong>
-        </li>
-        <li>
-          <span>Favorites</span>
-          <strong>4</strong>
+          <strong><?php echo $_SESSION['seguidor']; ?></strong>
         </li>
       </ul>
 
@@ -94,6 +112,6 @@
       <h1>Batman</h1>
       <span>@batman</span>
       <p>Batman is a fictional character, a superhero from the American comic book published by DC Comics.</p>
-    
+  
 </body>
 </html>

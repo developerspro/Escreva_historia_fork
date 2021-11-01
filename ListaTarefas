@@ -79,9 +79,9 @@
 
 Usuario Deslogado:
     1-Primeira Páginas Quem somos:
-        -Arrumar a NavBar para ficar fixada na tela.
-        -Colocar link para cadastrar
-        -Arrumar Footer
+        -Arrumar a NavBar para ficar fixada na tela. 
+        -Colocar link para cadastrar -- OK --
+        -Arrumar Footer -- OK --
     2-Segunda Página Logar:
         -Arrumar segurança dos Inputs
         -Arrumar CSS do "esqueceu senha" e fazer ele funcionar

@@ -42,7 +42,18 @@
             } else {
                 return false;
             }
-        } 
+        }
+
+        public function perfil($dados){
+
+            $sql = "select qntdseguidor from usuario where email =:email and senha=:senha";
+            $resultado = $this->conn->prepare($sql);
+            $resultado->bindParam(':email', $dados['email']);
+            $resultado->bindParam(':senha', $dados['senha']);
+            $resultado->execute();
+            $seguidor = $resultado->fetchAll(PDO::FETCH_ASSOC);
+            var_dump($seguidor);
+        }
        
 
     }

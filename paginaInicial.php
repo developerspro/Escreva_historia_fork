@@ -66,7 +66,7 @@
                     
                     
                     <li class="nav-item">
-                      <a class="nav-link" href="./login.php">Logar</a> 
+                      <a class="nav-link" href="./perfil.php">Logar</a> 
                     </li>
                 </div>
               </nav>

@@ -22,7 +22,7 @@
     
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" position="fixed">
     <?php if(isset($_SESSION['id'])) { ?>
           
           <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
@@ -46,7 +46,7 @@
 
           </nav>
     <?php }else{ ?>
-          <div class="container-fluid">
+          <div class="container-fluid" position="fixed">
               <nav class="navbar navbar-expand-lg navbar-light bg-light ">
                 
                 <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
@@ -58,7 +58,10 @@
                       <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
                     </li>
                     
-                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="./cadastro.php">Cadastre-se</a> 
+                    </li>
+
                     <li class="nav-item">
                       <a class="nav-link" href="./login.php">Logar</a> 
                     </li>
@@ -78,7 +81,7 @@
     </div>
 
 <div class="footer">
-      <p>Footer</p>
+      <p>Escreva sua história &copy; &nbsp;2021</p>
 </div>
 
 
