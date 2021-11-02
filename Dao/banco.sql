@@ -7,7 +7,8 @@ nome varchar(60) not null,
 email varchar(60) not null,
 nome_usuario varchar(30) not null,
 senha varchar(20) not null,
-qntdseguidor int not null default "0");
+qntdseguidor int not null default "0",
+biografia varchar(150) not null default" ");
 
 create table publicacao(
 id int primary key auto_increment,
