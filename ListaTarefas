@@ -69,7 +69,6 @@
 5-Quinta página: Criar pagina do usuario FAZER -- OK
     5.1 - Dados do usuario -- OK
 
-
 6-Sexta página: Armazenamento do conteudo FAZER ----Ok
     6.1 - Como o Usuario vai publicar suas histórias/ Qual ferramenta
     6.2 - Como elas vao ser armazenadas no banco
@@ -79,9 +78,9 @@
 
 Usuario Deslogado:
     1-Primeira Páginas Quem somos:
-        -Arrumar a NavBar para ficar fixada na tela.
-        -Colocar link para cadastrar
-        -Arrumar Footer
+        -Arrumar a NavBar para ficar fixada na tela. ---OK
+        -Colocar link para cadastrar --OK
+        -Arrumar Footer --OK
     2-Segunda Página Logar:
         -Arrumar segurança dos Inputs
         -Arrumar CSS do "esqueceu senha" e fazer ele funcionar

@@ -1,8 +1,7 @@
 body{
     background-repeat: no-repeat;
     background-image:linear-gradient(45deg, #2E0375, #8F51F4, #6107F2, #432673, #4E06C2, #542473, #3A0F75, #4D0675,#430261, #580375,#6D09AD,#7704AD, #AA02F2);
-    font-family: Tahoma;
-
+    height: 100%;
 }
  /*.IdBody{
  background-image: url(../imgs/CadastroLogin.png) ;
@@ -64,6 +63,13 @@ body{
      
  
  }
+
+ .footer {
+    grid-area: footer;
+    background-color: #b85cf5;
+    text-align: center;
+    margin-top: 10px;
+  }
  
  /* Formulario */
  
