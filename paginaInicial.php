@@ -9,7 +9,6 @@
   session_start()
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,7 +24,7 @@
 </head>
 
   <body>
-
+  <p>Sessão é : <?php var_dump($_SESSION['seguidor'])?></p>
   <div class="container-fluid">
     <?php if(isset($_SESSION['id'])) { ?>
           

@@ -15,6 +15,8 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
       $_SESSION['email'] = $dados['email'];
       $_SESSION['nome'] = $dados['nome'];
       $_SESSION['id'] = $dados['id'];
+      $_SESSION['seguidor'] = $dados['qntdseguidor'];
+      $_SESSION['biografia'] = $dados['biografia'];
       header('Location: ../paginaInicial.php');
    }
    else {

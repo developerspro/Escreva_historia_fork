@@ -15,24 +15,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 <body>
-<?php
-  $usuario = new usuario();
-  if (isset($_POST['email']) && isset($_POST['senha'])) {
-    $credenciais['email'] = $_POST['email'];
-    $credenciais['senha'] = $_POST['senha'];
-     $dados = $usuario->perfil($credenciais);
-      $_SESSION['seguidor'] = $dados['qntdseguidor'];
+<!--
+  #$usuario = new usuario();
+  #if (isset($_POST['email']) && isset($_POST['senha'])) {
+   # $credenciais['email'] = $_POST['email'];
+    #$credenciais['senha'] = $_POST['senha'];
+     #$dados = $usuario->perfil($credenciais);
+      #$_SESSION['seguidor'] = $dados['qntdseguidor'];
 
-  }
-?>
-
-
-<?php
-    var_dump($_SESSION);
-    var_dump($credenciais);
-    var_dump($dados);
-
-?>
+  #}
+-->
 <div class="container-fluid">
   <?php if(isset($_SESSION['id'])) { ?>
         
@@ -109,9 +101,9 @@
   <div class="wrapper-content content">
     <aside class="profile">
       <img src="./imgs/avatar.svg" alt="Batman" class="avatar">
-      <h1>Batman</h1>
-      <span>@batman</span>
-      <p>Batman is a fictional character, a superhero from the American comic book published by DC Comics.</p>
+      <h1><?php echo $_SESSION['nome']?></h1>
+      <span>@<?php echo $_SESSION['username']?></span>
+      <p><?php echo $_SESSION['biografia']?></p>
   
 </body>
 </html>
