@@ -77,16 +77,16 @@
 - 31/10 - Lista de Tarefas
 
 Usuario Deslogado:
-    1-Primeira Páginas Quem somos:
+    1-Primeira Páginas Quem somos: ---OK
         -Arrumar a NavBar para ficar fixada na tela. ---OK
         -Colocar link para cadastrar --OK
         -Arrumar Footer --OK
     2-Segunda Página Logar:
-        -Arrumar segurança dos Inputs
+        -Arrumar segurança dos Inputs ---OK
         -Arrumar CSS do "esqueceu senha" e fazer ele funcionar
         -Arrumar CSS do "registrar" e fazer ele funcionar
         -Achar cor do background do fundo
-        -Arrumar Footer
+        -Arrumar Footer ----OK
     3-Terceira Página Cadastrar:
         -Arrumar segurança dos Inputs de acordo com o banco
         -Arrumar CSS do "esqueceu senha" e fazer ele funcionar
