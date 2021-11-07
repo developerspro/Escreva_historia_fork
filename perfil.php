@@ -100,10 +100,38 @@
 
   <div class="wrapper-content content">
     <aside class="profile">
-      <img src="./imgs/avatar.svg" alt="Batman" class="avatar">
+      <?php if(isset($_SESSION['capa'])){?>
+          <img src="<?php $_SESSION['capa']?>" alt="Foto de perfil">
+      <?php }
+      else {?>
+   <!--     <form method="POST" enctype="multipart/form-data"> 
+   <label for="conteudo">Enviar imagem:</label>
+   <input type="file" name="pic" accept="image/*">    
+     <button type="submit">Enviar imagem</button>
+</form> -->
+    <?php } ?>      
+        
+        
+      
       <h1><?php echo $_SESSION['nome']?></h1>
       <span>@<?php echo $_SESSION['username']?></span>
       <p><?php echo $_SESSION['biografia']?></p>
+
+      <form method="POST" enctype="multipart/form-data"> 
+   <label for="conteudo">Adicione uma foto de perfil</label>
+   <input type="file" name="pic" accept="image/*">    
+     <button type="submit">Enviar imagem</button>
+
+     <?php
+ if(isset($_FILES['pic']))
+ {
+    $ext = strtolower(substr($_FILES['pic']['name'],-4)); //Pegando extensão do arquivo
+    $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+    $dir = './imgs/uploads/'; //Diretório para uploads 
+    move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
+    echo("Imagen enviada com sucesso!"); 
+ }
+    ?>
   
 </body>
 </html>

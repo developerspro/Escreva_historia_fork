@@ -24,8 +24,7 @@
 </head>
 
   <body>
-  <p>Sessão é : <?php var_dump($_SESSION['seguidor'])?></p>
-  <div class="container-fluid">
+    <div class="container-fluid">
     <?php if(isset($_SESSION['id'])) { ?>
           
           <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
