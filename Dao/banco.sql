@@ -8,9 +8,11 @@ email varchar(60) not null,
 nome_usuario varchar(30) not null,
 senha varchar(20) not null,
 qntdseguidor int not null default "0",
-biografia varchar(150) not null default" ",
-capa varchar(250) not null default" ",
-banner varchar(250) not null default " ");
+biografia varchar(150)null,
+capa varchar(250) null,
+banner varchar(250) null);
+
+
 
 create table publicacao(
 id int primary key auto_increment,
