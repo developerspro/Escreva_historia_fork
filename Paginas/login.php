@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escreva sua história - Crie sua conta!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/styleLogin.css">
+    <link rel="stylesheet" href="../style/styleLogin.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     
     
@@ -21,7 +21,7 @@
               <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
           </li>
           <li class="nav-item ">
-            <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+            <a class="nav-link" style="text-transform: uppercase;" href="./index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
           </li>
           <li class="nav-item">
             <a class="nav-link" style="text-transform: uppercase;" href="./cadastro.php"><b>Cadastrar</b></a> <!-- redirecionando a pagina de login -->
@@ -34,7 +34,7 @@
 
       <div id="login-container">
 
-        <form action="./Metodos/confirmacaoLogin.php" method="post">
+        <form action="../Metodos/confirmacaoLogin.php" method="post">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required="required" size="9" minlength="8" maxlength="30"autocomplate="off">
             <label for="password">Senha</label>
@@ -48,7 +48,7 @@
         <div id = "registe-container">
 
             <p class="form-p">Ainda não tem uma conta?</p>
-            <a class="form-link" href="cadastro.php">Registar</a>
+            <a class="form-link" href="./cadastro.php">Registar</a>
 
           </div>
       </div>

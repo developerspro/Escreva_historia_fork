@@ -1,6 +1,6 @@
 <?php 
 
-  require_once './Dao/Publicacoes.php';
+  require_once '../Dao/Publicacoes.php';
   $pg = new Publicacoes;
 
   $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
@@ -19,8 +19,8 @@
     <title>Escreva sua história - Crie sua conta!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./style/styleInicial.css">
-    <link rel="stylesheet" href="./style/bootstrap/css.css">
+    <link rel="stylesheet" href="../style/styleInicial.css">
+    <link rel="stylesheet" href="../style/bootstrap/css.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 
@@ -49,7 +49,7 @@
               <a class="nav-link" href="./perfil.php">Bem vindo - <?php echo $_SESSION['nome'];?></a> 
             </div>
 
-            <img src="./imgs/avatar.svg" alt="Logo Twitter" class="icon me-4">
+            <img src="../imgs/avatar.svg" alt="Logo Twitter" class="icon me-4">
 
           </nav>
     <?php }else{ ?>
@@ -61,7 +61,7 @@
                     <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+                  <a class="nav-link" style="text-transform: uppercase;" href="./index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" style="text-transform: uppercase;" href="./cadastro.php"><b>Cadastrar</b></a> <!-- redirecionando a pagina de login -->
@@ -88,13 +88,13 @@
 
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./imgs/TesteCarousel.png" alt="Los Angeles" class="" style="width:100%">
+                <img src="../imgs/TesteCarousel.png" alt="Los Angeles" class="" style="width:100%">
               </div>
               <div class="carousel-item">
-                <img src="./imgs/TesteCarousel2.png" alt="Chicago" class="" style="width:100%">
+                <img src="../imgs/TesteCarousel2.png" alt="Chicago" class="" style="width:100%">
               </div>
               <div class="carousel-item">
-                <img src="./imgs/TesteCarousel3.png" alt="New York" class="" style="width:100%">
+                <img src="../imgs/TesteCarousel3.png" alt="New York" class="" style="width:100%">
               </div>
             </div>
 
@@ -121,7 +121,7 @@
                       <h5 class="card-title"><?php echo $campo['titulo']; ?></h5>
                       <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-muted"><?php echo $campo['data']; ?></small></p>
-                      <a href=""></a>
+                      <a href="">OLA</a>
                     </div>
                 </div>
               </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escreva sua história - Crie sua conta!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/styleCadastro.css">
+    <link rel="stylesheet" href="../style/styleCadastro.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     
     
@@ -21,7 +21,7 @@
               <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
           </li>
           <li class="nav-item ">
-            <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+            <a class="nav-link" style="text-transform: uppercase;" href="./index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
           </li>
           <li class="nav-item">
             <a class="nav-link" style="text-transform: uppercase;" href="./login.php"><b>Logar</b></a> <!-- redirecionando a pagina de login -->
@@ -34,7 +34,7 @@
 
       <div id="login-container">
 
-        <form action="./Metodos/confirmacaoCadastro.php" method="post">
+        <form action="../Paginas/Metodos/confirmacaoCadastro.php" method="post">
           <label for="name">Nome Completo</label>
           <input type="text" name="nome" id="name" placeholder="Digite seu nome completo" autocomplate="off" required="required" size="9" minlength="6" maxlength="30">
           <label for="email">E-mail</label>
