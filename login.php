@@ -15,23 +15,18 @@
   <div class="container-fluid">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-
-      <a class="navbar-brand ps-4" href="./paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">  
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+          <li class="nav-item ps-4">
+              <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./cadastro.php">Cadastrar</a> <!-- redirecionando a pagina de login -->
+            <a class="nav-link" style="text-transform: uppercase;" href="./cadastro.php"><b>Cadastrar</b></a> <!-- redirecionando a pagina de login -->
           </li>
+        </ul>
       </div>
     </nav>
 
@@ -46,14 +41,14 @@
             <input type="password" name="senha" id="password" required="required" size="9" minlength="8" maxlength="30" placeholder="Digite a sua senha">
             <label for="usuario">Nome de usuario:</label>
             <input type="text" name="usuario" id="usuario" required="required" size="9" minlength="8" maxlength="30" placeholder="Digite seu nome de usuario">
-            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+            <a class="form-link" href="#" id="forgot-pass">Esqueceu a senha?</a>
             <input type="submit" value="Login">
         </form>
 
         <div id = "registe-container">
 
-            <p>Ainda não tem uma conta?</p>
-            <a href="cadastro.php">Registar</a>
+            <p class="form-p">Ainda não tem uma conta?</p>
+            <a class="form-link" href="cadastro.php">Registar</a>
 
           </div>
       </div>

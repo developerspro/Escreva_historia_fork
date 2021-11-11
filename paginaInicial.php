@@ -1,7 +1,7 @@
 <?php 
 
-  require_once './Dao/paginacao.php';
-  $pg = new Paginacao;
+  require_once './Dao/Publicacoes.php';
+  $pg = new Publicacoes;
 
   $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
 
@@ -19,7 +19,7 @@
     <title>Escreva sua história - Crie sua conta!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./style/estiloPaginaInicial.css">
+    <link rel="stylesheet" href="./style/styleInicial.css">
     <link rel="stylesheet" href="./style/bootstrap/css.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
@@ -29,53 +29,55 @@
   <div class="container-fluid">
     <?php if(isset($_SESSION['id'])) { ?>
           
-          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             
-            <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
-
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">  
               <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
+                <li class="nav-item ps-4">
+                    <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
                 </li>
-                
+                <li class="nav-item ">
+                  <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Escreva sua História!</a> 
+                  <a class="nav-link" style="text-transform: uppercase;" href="./cadastro.php"><b>Escreva sua Historia!</b></a> <!-- redirecionando a pagina de login -->
                 </li>
+              </ul>
             </div>
 
             <div class="actions">
               <a class="nav-link" href="./perfil.php">Bem vindo - <?php echo $_SESSION['nome'];?></a> 
             </div>
+
             <img src="./imgs/avatar.svg" alt="Logo Twitter" class="icon me-4">
 
           </nav>
     <?php }else{ ?>
           <div class="container-fluid">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                
-                <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
-
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                  <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
-                    </li>
-                    
-                    
-                    <li class="nav-item">
-                      <a class="nav-link" href="./login.php">Logar</a> 
-                    </li>
-                </div>
-              </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">  
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ps-4">
+                    <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="text-transform: uppercase;" href="./cadastro.php"><b>Cadastrar</b></a> <!-- redirecionando a pagina de login -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="text-transform: uppercase;" href="./login.php"><b>Login</b></a> <!-- redirecionando a pagina de login -->
+                </li>
+              </ul>
+            </div>
+         </nav>
       <?php } ?>
     
                 
       
       <div class="grid-container">
-        <div class="header">
+        <div class="header" style="margin-top: 65px;">
           <div id="demo" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
 
@@ -111,7 +113,7 @@
 
           <?php foreach ($dados as $linha => $campo): ?>
 
-            
+            <form action="./login.php">
               <div class="mx-auto " style="width: 700px">
                 <div class="card mb-3 ">
                   <img src="<?php echo $campo['capa']; ?>" class="card-img-top" alt="...">
@@ -119,9 +121,11 @@
                       <h5 class="card-title"><?php echo $campo['titulo']; ?></h5>
                       <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-muted"><?php echo $campo['data']; ?></small></p>
+                      <a href=""></a>
                     </div>
                 </div>
               </div>
+            </form>
             
             <?php endforeach; ?>
             <nav aria-label="Navegação de página exemplo">
@@ -150,8 +154,10 @@
       </div>
         
       <div class="footer">
-        <p>Footer</p>
-      </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);margin-bottom: 15px;">
+            © 2021 Copyright: EscrevaSuaHistoria.com
+        </div>
+      </div>  
 </div>
 
   </body>

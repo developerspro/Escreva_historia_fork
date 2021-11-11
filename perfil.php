@@ -1,3 +1,12 @@
+  <?php
+  
+  require_once './Dao/Usuario.php';
+  $usuario = new Usuario;
+  session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +19,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 <body>
+  <?php $id =( $_SESSION['id']); 
+        var_dump($id);
+        $perfil = ($_SESSION['fotoPerfil']);
+        var_dump($perfil);
+        
+       ?>
 
 <div class="container-fluid">
   <?php if(isset($_SESSION['id'])) { ?>
@@ -32,6 +47,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="./Testes.php">Bem vindo - <?php echo $_SESSION['nome'];?></a> 
               </li>
+              <div class="actions me-4">
+                    <a class="nav-link" href="./Teste.php">Sair</a> 
+              </div>
           </div>
         </nav>
   <?php }else{ ?>
@@ -52,7 +70,7 @@
                   </li>
               </div>
               <div class="actions me-4">
-                    <a class="nav-link" href="./perfil.php">Sair</a> 
+                    <a class="nav-link" href="./Teste.php">Sair</a> 
               </div>
             </nav>
     <?php } ?>
@@ -90,10 +108,21 @@
 
   <div class="wrapper-content content">
     <aside class="profile">
-      <img src="./imgs/avatar.svg" alt="Batman" class="avatar">
+      <img src="<?php echo $_SESSION['fotoPerfil'];?>" alt="Batman" class="avatar">
       <h1>Batman</h1>
       <span>@batman</span>
       <p>Batman is a fictional character, a superhero from the American comic book published by DC Comics.</p>
+
+    <form method="POST" enctype="multipart/form-data" action="./configuracaoUsuario.php"> 
+    <label for="conteudo">Adicione uma foto de perfil</label>
+    <input type="file" name="pic" accept="image/*">
+    <button type="submit">Enviar imagem</button>
+
+     <?php
+ 
+  
+  
+    ?>
     
 </body>
 </html>

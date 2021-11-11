@@ -84,23 +84,21 @@ Usuario Deslogado:
     2-Segunda Página Logar:
         -Arrumar segurança dos Inputs ---OK
         -Arrumar CSS do "esqueceu senha" e fazer ele funcionar
-        -Arrumar CSS do "registrar" e fazer ele funcionar
-        -Achar cor do background do fundo
+        -Arrumar CSS do "registrar" e fazer ele funcionar --- OK
+        -Achar cor do background do fundo ---OK
         -Arrumar Footer ----OK
     3-Terceira Página Cadastrar:
-        -Arrumar segurança dos Inputs de acordo com o banco
-        -Arrumar CSS do "esqueceu senha" e fazer ele funcionar
-        -Arrumar CSS do "registrar" e colocar "logar"
-        -Achar cor do background do fundo
-        -Arrumar Footer
+        -Arrumar segurança dos Inputs de acordo com o banco ----OK
+        -Achar cor do background do fundo ---OK
+        -Arrumar Footer----OK
     4-Quarta Página Inicial:
-        -Arrumar a NavBar para ficar fixada na tela.
-        -Colocar link para cadastrar
+        -Arrumar a NavBar para ficar fixada na tela. ---OK
+        -Colocar link para cadastrar ----OK
         -Colocar cards laterais
         -Tirar o conteudo de testos das publicações
         -Colocar nome do usuario nas publicações 
         -Colocar botão para acessar as historias
-        -Arrumar Footer
+        -Arrumar Footer ---OK
 
 Usuario logado:
 

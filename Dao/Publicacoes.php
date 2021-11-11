@@ -1,15 +1,22 @@
 <?php
-    require_once("Conexao.php");
+    require_once("Usuario.php");
 
-    class Paginacao extends Conexao{
+    class Publicacoes extends Usuario{
+
+
+        public function postagem(){    
+
+            $sqlSelect = "SELECT id, 'id_usuario_fk', 'titulo', 'capa', 'artigo', 'data', 'hora' FROM publicacoes";
+            $resultado = $this->conn->prepare($sqlSelect);
+            $resultado->execute();
+            $todos = $resultado->fetchAll(PDO::FETCH_ASSOC);
+            return $todos;
+
+        }
 
         public function paginar($pag){
 
-            $sqlSelect = "SELECT 'id_usuario_fk', 'titulo', 'capa', 'artigo', 'data', 'hora' FROM publicacoes";
-            $resultado = $this->conn->prepare($sqlSelect);
-            $resultado->execute();
-            $todos = $resultado->fetchAll();
-
+            $todos = $this->postagem();
             $limitadorPostagens = '4';
             
             $totalRegistros = count($todos);

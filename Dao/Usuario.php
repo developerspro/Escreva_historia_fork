@@ -1,18 +1,16 @@
 <?php
-    
-    
     require_once("Conexao.php");
     class Usuario extends Conexao{
     
-        
-        
         // função que realiza o cadastro no banco
         public function cadastrar($dados)
          { 
-            $sql = "insert into usuario(email, senha) values(:email, :senha)";
+            $sql = "insert into usuario(email, senha, nome, nome_usuario) values(:email, :senha, :nome, :nomeUsuario)";
             $resultado = $this->conn->prepare($sql);
             $resultado->bindParam(':email', $dados['email']);
             $resultado->bindParam(':senha', $dados['senha']);
+            $resultado->bindParam(':nome', $dados['nome']);
+            $resultado->bindParam(':nomeUsuario', $dados['nomeUsuario']);
             $retorno = $resultado->execute();
             if(isset($retorno)) {
                 session_start();
@@ -26,11 +24,9 @@
             }
         }
         
-
-     
+        // função que realiza o login no banco
         public function login($dados)
         { 
-        
             $sql = "select * from usuario where email=:email and senha=:senha and nome_usuario=:usuario"; 
             $resultado = $this->conn->prepare($sql); 
             $resultado->bindParam(':email', $dados['email']);
@@ -44,6 +40,18 @@
                 return false;
             }
         } 
+
+        public function editarImagem($id, $caminho){
+            $sql = "UPDATE usuario SET foto_usuario = :caminho WHERE id = :id";
+            $resultado = $this->conn->prepare($sql);
+            $resultado->bindParam(':id', $id);
+            $resultado->bindParam(':caminho', $caminho);
+            $resultado->execute();
+            return $resultado;
+            
+
+
+        }
        
 
     }

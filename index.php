@@ -1,7 +1,7 @@
 <?php 
 
-  require_once './Dao/paginacao.php';
-  $pg = new Paginacao;
+  require_once './Dao/Publicacoes.php';
+  $pg = new Publicacoes;
 
   $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
 
@@ -44,25 +44,23 @@
 
           </nav>
     <?php }else{ ?>
-          <div class="container-fluid">
+            <div class="container-fluid">
               <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                
-                <a class="navbar-brand ps-4" href="paginaInicial.php">Inicio</a>
-
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">  
                   <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a>
+                    <li class="nav-item ps-4">
+                      <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
                     </li>
-                  
+                    <li class="nav-item ">
+                      <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+                    </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./login.php">Logar</a> 
+                      <a class="nav-link" style="text-transform: uppercase;" href="./cadastro.php"><b>Cadastrar</b></a> <!-- redirecionando a pagina de login -->
                     </li>
-
                     <li class="nav-item">
-                      <a class="nav-link" href="./cadastro.php">Cadastrar</a> 
+                      <a class="nav-link" style="text-transform: uppercase;" href="./login.php"><b>Logar</b></a> <!-- redirecionando a pagina de login -->
                     </li>
+                  </ul>
                 </div>
               </nav>
       <?php } ?>
@@ -78,11 +76,11 @@
   </section>
     </div>
 
-<div class="footer">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);margin-bottom: 15px;">
-        © 2021 Copyright: EscrevaSuaHistoria.com
+    <div class="footer">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);margin-bottom: 15px;">
+          © 2021 Copyright: EscrevaSuaHistoria.com
+      </div>
     </div>
-</div>
 
 </body>
 </html>

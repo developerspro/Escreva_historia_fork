@@ -11,49 +11,31 @@
     
     
 </head>
-
   <body>
-
   <div class="container-fluid">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-
-      <a class="navbar-brand ps-4" href="./paginaInicial.php">Inicio</a> <!-- Redirecionando a pagina inicio.php -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">  
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Quem somos?<span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
+          <li class="nav-item ps-4">
+              <a class="nav-link" style="text-transform: uppercase;" href="./paginaInicial.php"><b>Inicio</b></a> <!-- Redirecionando a pagina inicio.php -->
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" style="text-transform: uppercase;" href="index.php"><b>Quem somos?</b><span class="sr-only"></span></a> <!-- Redirecionando a pagina de criação de conta -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./login.php">Logue já!</a> <!-- redirecionando a pagina de login -->
+            <a class="nav-link" style="text-transform: uppercase;" href="./login.php"><b>Logar</b></a> <!-- redirecionando a pagina de login -->
           </li>
+        </ul>
       </div>
     </nav>
 
     <div class = "IdBody">
 
-    <div id="login-container">
-
+      <div id="login-container">
 
         <form action="./Metodos/confirmacaoCadastro.php" method="post">
-
-        <!-- form atual -->
-         <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off">
-          <label for="password">Senha</label>
-          <input type="password" name="senha" id="password" placeholder="Digite a sua senha "required="required" size="9" minlength="8" maxlength="20">
-          <input type="submit" value="Cadastrar">
-          
-
-        <!-- criei novos inputs, para acompanhar nosso banco mas não acompanha o background
-        <label for="name">Nome Completo</label>
+          <label for="name">Nome Completo</label>
           <input type="text" name="nome" id="name" placeholder="Digite seu nome completo" autocomplate="off" required="required" size="9" minlength="6" maxlength="30">
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplate="off" required="required" size="9" minlength="10" maxlength="30">
@@ -61,24 +43,17 @@
           <input type="text" name="nomeusuario" id="usuario" placeholder="Insira seu nome de usuario" required="required" autocomplate="off" size="9" minlength="8" maxlength="30">
           <label for="password">Senha</label>
           <input type="password" name="senha" id="password" placeholder="Digite a sua senha "required="required" size="9" minlength="8" maxlength="20">
-          <a href="#" id="forgot-pass">Esqueceu a senha?</a>
           <input type="submit" value="Cadastrar">
-        -->
-      </form>
+        </form>
 
-       <div id = "registe-container">
-
-          <p>Ainda não tem uma conta?</p>
-          <a href="cadastro.php">Registar</a>
-
-        </div>
-    </div>
-    
-
-    
-    
-  
-  </div>
-            
+      </div>
+    </div> 
+    <div class="footer">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);margin-bottom: 15px;">
+          © 2021 Copyright: EscrevaSuaHistoria.com
+      </div>
+    </div>         
   </body>
 </html>
+
+
