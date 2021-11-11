@@ -6,7 +6,7 @@
 
         public function postagem(){    
 
-            $sqlSelect = "SELECT id, 'id_usuario_fk', 'titulo', 'capa', 'artigo', 'data', 'hora' FROM publicacoes";
+            $sqlSelect = "SELECT * FROM publicacoes";
             $resultado = $this->conn->prepare($sqlSelect);
             $resultado->execute();
             $todos = $resultado->fetchAll(PDO::FETCH_ASSOC);
