@@ -34,7 +34,7 @@
 
       <div id="login-container">
 
-        <form action="../Paginas/Metodos/confirmacaoCadastro.php" method="post">
+        <form action="../Metodos/confirmacaoCadastro.php" method="post">
           <label for="name">Nome Completo</label>
           <input type="text" name="nome" id="name" placeholder="Digite seu nome completo" autocomplate="off" required="required" size="9" minlength="6" maxlength="30">
           <label for="email">E-mail</label>

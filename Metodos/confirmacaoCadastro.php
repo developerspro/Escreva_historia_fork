@@ -13,12 +13,13 @@
 
  
  if($db->cadastrar($credenciais)){
-    header('Location: ..Paginnas/paginaInicial.php');
+    
+    header('Location: ../Paginas/paginaInicial.php');
     
  }
  else{
 
-   header("Location: index.php");
+   header("Location: ../index.php");
 }
 
 ?>
