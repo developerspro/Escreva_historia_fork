@@ -1,20 +1,27 @@
 <?php
     require_once("Usuario.php");
+    
 
     class Publicacoes extends Usuario{
 
 
         public function postagem(){    
 
-            $sqlSelect = "SELECT * FROM publicacoes";
+            $sqlSelect = "SELECT 'id', 'titulo', 'capa', 'artigo', 'data', 'hora' FROM publicacoes";
             $resultado = $this->conn->prepare($sqlSelect);
             $resultado->execute();
-            $todos = $resultado->fetchAll(PDO::FETCH_ASSOC);
-            return $todos;
+            $postagens = $resultado->fetchAll(PDO::FETCH_ASSOC);
+            if (isset($postagens)) {
+                return $postagens;
+            }else{
+                echo "Error Banco";
+            }
 
         }
 
-        public function paginar($pag){
+        public function paginar(){
+
+            $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
 
             $todos = $this->postagem();
             $limitadorPostagens = '4';

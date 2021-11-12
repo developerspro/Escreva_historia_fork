@@ -1,15 +1,9 @@
-<?php 
-  
-  session_start();
-  require_once '../Dao/Publicacoes.php';
-  $pg = new Publicacoes;
+<?php
 
-  
+$post = $_GET['post'];
+echo $post;
 
-  $postagens = $pg->paginar();
- 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -112,43 +106,7 @@
 
         <div class="middle" style="background-color:#bbb;">
 
-          <?php foreach ($postagens as $linha => $campo):
-              $_SESSION['idPostagem'] = $campo['id']?>
-              <div class="mx-auto " style="width: 700px">
-                <div class="card mb-3 ">
-                  <img src="<?php echo $campo['capa']; ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><?php echo $campo['titulo']; ?></h5>
-                      <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted"><?php echo $campo['data']; ?></small></p>
-                      <a href="post.php?post=<?= $_SESSION['idPostagem'] ?>">OLA</a>
-                    </div>
-                </div>
-              </div>
-            
-            
-            <?php endforeach; ?>
-            <nav aria-label="Navegação de página exemplo">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                </li>
-                  <?php 
-                    for($i = 0; $i <= $_POST['totalPaginas']; $i++){
-                  ?>
-                <li class="page-item"><a class="page-link" href="paginaInicial.php?pagina=<?=$i?>"><?=$i?></a></li>
-                    <?php
-                      }
-                    ?>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Próximo</a>
-                  </li>
-              </ul>
-            </nav>
-
-            
-          
-          </div>  
+        </div>  
         
         
       </div>

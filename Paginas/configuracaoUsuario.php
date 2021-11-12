@@ -1,6 +1,6 @@
 <?php
 
-require_once './Dao/Usuario.php';
+require_once '../Dao/Usuario.php';
   $usuario = new Usuario;
   session_start();
 
