@@ -5,12 +5,12 @@
     class Publicacoes extends Usuario{
 
 
-        public function postagem(){    
+        public function todasPostagens(){    
 
-            $sqlSelect = "SELECT 'id', 'titulo', 'capa', 'artigo', 'data', 'hora' FROM publicacoes";
+            $sqlSelect = "SELECT * FROM publicacao";
             $resultado = $this->conn->prepare($sqlSelect);
             $resultado->execute();
-            $postagens = $resultado->fetchAll(PDO::FETCH_ASSOC);
+            $postagens = $resultado->fetchAll();
             if (isset($postagens)) {
                 return $postagens;
             }else{
@@ -19,21 +19,35 @@
 
         }
 
+        public function postagem($idPostagem){
+            $sql = "SELECT * FROM publicacao WHERE id = :idPostagem";
+            $resultado = $this->conn->prepare($sql);
+            $resultado->bindParam(':idPostagem', $idPostagem);
+            $resultado->execute();
+            $dados = $resultado->fetchall();
+            if (isset($dados)) {
+                return $dados;
+            }else {
+                "nenhuma postagem encontrada";
+            }
+
+        }
+
         public function paginar(){
 
             $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
 
-            $todos = $this->postagem();
-            $limitadorPostagens = '4';
+            $todos = $this->todasPostagens();
+            $limitadorPostagens = '6';
             
-            $totalRegistros = count($todos);
+            $totalRegistros = count($todos); //conta o total de postagens
             
-            $totalPaginas = ceil($totalRegistros/$limitadorPostagens);
+            $totalPaginas = ceil($totalRegistros/$limitadorPostagens); //Divide o total de postagens pelo limitador
             $_POST['totalPaginas'] = $totalPaginas;
 
-            $inicio = ($limitadorPostagens*$pag)-$limitadorPostagens;
+            $inicio = ($limitadorPostagens*$pag)-$limitadorPostagens;// Inicio que limita o select
 
-            $final = $this->conn->prepare("SELECT * FROM publicacoes LIMIT :inicio, :limite");
+            $final = $this->conn->prepare("SELECT * FROM publicacao LIMIT :inicio, :limite");
             $final->bindParam(":inicio", $inicio, PDO::PARAM_INT);
             $final->bindParam(":limite", $limitadorPostagens, PDO::PARAM_INT);
             $final->execute();

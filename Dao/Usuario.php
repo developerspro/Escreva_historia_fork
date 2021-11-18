@@ -41,20 +41,12 @@
             }
         } 
 
-        public function editarImagem($id, $caminho){
-            $sql = "UPDATE usuario SET foto_usuario = :caminho WHERE id = :id";
-            $resultado = $this->conn->prepare($sql);
-            $resultado->bindParam(':id', $id);
-            $resultado->bindParam(':caminho', $caminho);
-            $resultado->execute();
-            return $resultado;
-            
 
 
         }
        
 
-    }
+    
 
 
 ?>

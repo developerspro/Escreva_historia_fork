@@ -10,6 +10,7 @@ if (isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['usuario'])
    $credenciais['email'] = $_POST['email'];
    $credenciais['senha'] = $_POST['senha'];
    $credenciais['usuario'] = $_POST['usuario'];
+   
    if ($db->login($credenciais) == true) {
       $dados = $db->login($credenciais);
       $_SESSION['username'] = $dados['nome_usuario'];
@@ -20,10 +21,10 @@ if (isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['usuario'])
       header('Location: ../Paginas/paginaInicial.php');
    }
    else {
-      header('Location: ../login.php');
+      header('Location: ../Paginas/login.php');
    }
 }else {
-   header('Location: ../login.php');
+   header('Location: ../Paginas/login.php');
 }
 
 ?>
